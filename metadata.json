@@ -1,0 +1,6 @@
+{
+  "name": "CodeQuest - Aprenda Programação Jogando",
+  "description": "Plataforma gamificada para iniciantes aprenderem lógica, Python, JavaScript, HTML/CSS e SQL com desafios interativos, ranking, conquistas e batalhas de código.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
