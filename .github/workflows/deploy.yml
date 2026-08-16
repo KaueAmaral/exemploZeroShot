@@ -28,27 +28,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
-          cache: npm
-
-      - name: Setup Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: lts/*
+          package-manager-cache: false
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build
+      - name: Build application
         run: npm run build
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v6
 
-      - name: Upload build
+      - name: Upload build artifact
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./dist
